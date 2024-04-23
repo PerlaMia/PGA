@@ -1,0 +1,61 @@
+.gallery-container {
+  max-width: 600px;
+    width: 300;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.gallery-carousel {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.gallery-carousel img {
+  max-width: 100%;
+  height: auto;
+}
+/* Estilo para la imagen de la serpiente */
+.snake-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform: translateX(-100%);
+  animation: deslizar 2s linear infinite; /* Ajusta la duración a 5s para aumentar la velocidad */
+}
+
+/* Animación para la serpiente */
+@keyframes deslizar {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+#pie-pag{     
+    background: none;
+    height: 250px;
+    width: 100%; 
+     font-style: italic;
+    color: black;
+}
+#listaredes li{    
+    display: inline-flex; 
+    padding-left: 0px;
+    margin-right: 0px;
+    transition: transform 0.3s ease;
+}
+#listaredes{
+    float: right;
+    padding-left: 0px;
+    padding-top: 10px
+}
+#listaredes img{
+    height: 50px;
+    width: 50px;
+}
+#listaredes li:hover{
+    transform: scale(1.3);
+}
